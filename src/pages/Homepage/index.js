@@ -1,5 +1,4 @@
 // @flow
-/* eslint-disable react/no-unused-prop-types */
 import React from 'react';
 import Query from 'react-apollo/Query';
 import gql from 'graphql-tag';
@@ -29,7 +28,9 @@ type HomeMoviesQuery = {
 
 const Homepage = () => (
   <Query query={query}>
-    {({ loading, error, data }: HomeMoviesQuery) => {
+    {(homeMovieProps: HomeMoviesQuery) => {
+      const { loading, error, data } = homeMovieProps;
+
       if (loading) return <p>Loading...</p>;
       if (error) {
         return (
