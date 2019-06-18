@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules
+
+# Distribution directories
+dist
+
+# Documentation directory
+flow-coverage
+
+# Logs
+*.log
+npm-debug.log*
+
+# eslint cache
+.eslintcache
+
+# storybook cache
+.cache
+
+# test videos
+cypress/videos

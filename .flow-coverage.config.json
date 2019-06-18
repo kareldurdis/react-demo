@@ -1,0 +1,14 @@
+{
+  "globIncludePatterns": [
+    "src/**/*.js"
+  ],
+  "globExcludePatterns": [
+    "src/**/*.spec.js"
+  ],
+  "reportTypes": [
+    "text",
+    "html"
+  ],
+  "concurrentFiles": 4,
+  "threshold": 50
+}

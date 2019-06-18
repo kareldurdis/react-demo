@@ -1,0 +1,13 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+# resolver for absolute imports from src/
+module.name_mapper='^src\(\/?.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+[strict]
